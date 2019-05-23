@@ -10,5 +10,5 @@ Run the code
 
 sh run.sh
 
-You can change the Complie flag in cfl3d/build/Install.
+You can change the Complie flag in cfl3dv6/build/Install.
 The result file is CFL3D/XT.out
