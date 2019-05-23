@@ -62,8 +62,9 @@ c!$acc update device(u,v,w,lx,ly,lz,mx,my,mz,c,r1,r2,r3,
 c!$acc& r4,r5,ub,kx,ky,kz,gm1)
 c!$acc serial
 c!$acc kernels loop        
+!$acc update device(gm1)
 !$acc data copy(u,v,w,lx,ly,lz,mx,my,mz,c,r1,r2,r3,r4,
-!$acc& r5,ub,kx,ky,kz,gm1)
+!$acc& r5,ub,kx,ky,kz)
 !$acc parallel loop seq
       do 1000 m=1,n
       vb    =  u(m)*lx(m)+v(m)*ly(m)+w(m)*lz(m)
